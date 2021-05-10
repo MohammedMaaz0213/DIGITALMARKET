@@ -1,0 +1,139 @@
+<div id="pricing-page">                <div class="col-md-4 col-sm-6">
+                    <div class="ht-plan-block wow zoomIn">
+                         <div class="price-box">
+                                                <div class="ht-princing-title">BASIC PLAN</div>
+                         
+                        <div class="clearfix"></div>
+                       
+                                                              <div class="amount-box">
+                                    <div class="plan-amount">
+                                        <div class="effectp">$149</div></div>
+                                </div>
+                                  
+                                                                 <div class="ht-princing-excerpt">
+                                   In the basic plan, we perform 10 Keywords Optimization for our client.                                </div>
+                                  
+
+                                
+
+                            <div class="clearfix"></div>
+                        </div>
+                                                                                            <div class="ht-princing-link">
+                                    <a class="pribtn pricingbtn" href="#">BUY NOW                                    </a>
+                                </div>
+                                
+                       <!--  <div class="clearfix"></div> -->
+                    </div>
+                     <script>
+                          jQuery.noConflict();
+                          $(function(){
+                            function htplanblockHeight(){
+                              var ht = 0;
+                              $('#pricing-page .ht-plan-block').each(function(i){
+                                var tHt = $(this).height();
+                                if(ht<tHt){
+                                  ht=tHt;
+                                }
+                              });
+                              $('#pricing-page .ht-plan-block').height(ht+'px');
+                            }
+                            htplanblockHeight();
+                          });
+                          $( window ).resize(function(){
+                            htplanblockHeight();
+                          });
+                        </script>
+                </div>
+                                <div class="col-md-4 col-sm-6">
+                    <div class="ht-plan-block wow zoomIn">
+                         <div class="price-box">
+                                                <div class="ht-princing-title">ADVANCE PRO</div>
+                         
+                        <div class="clearfix"></div>
+                       
+                                                              <div class="amount-box">
+                                    <div class="plan-amount">
+                                        <div class="effectp">$315</div></div>
+                                </div>
+                                  
+                                                                 <div class="ht-princing-excerpt">
+                                   In the basic plan, we perform 50 Keywords Optimization for our client.                                </div>
+                                  
+
+                                
+
+                            <div class="clearfix"></div>
+                        </div>
+                                                                                            <div class="ht-princing-link">
+                                    <a class="pribtn pricingbtn" href="#">BUY NOW                                    </a>
+                                </div>
+                                
+                       <!--  <div class="clearfix"></div> -->
+                    </div>
+                     <script>
+                          jQuery.noConflict();
+                          $(function(){
+                            function htplanblockHeight(){
+                              var ht = 0;
+                              $('#pricing-page .ht-plan-block').each(function(i){
+                                var tHt = $(this).height();
+                                if(ht<tHt){
+                                  ht=tHt;
+                                }
+                              });
+                              $('#pricing-page .ht-plan-block').height(ht+'px');
+                            }
+                            htplanblockHeight();
+                          });
+                          $( window ).resize(function(){
+                            htplanblockHeight();
+                          });
+                        </script>
+                </div>
+                                <div class="col-md-4 col-sm-6">
+                    <div class="ht-plan-block wow zoomIn">
+                         <div class="price-box">
+                                                <div class="ht-princing-title">ADVANCE</div>
+                         
+                        <div class="clearfix"></div>
+                       
+                                                              <div class="amount-box">
+                                    <div class="plan-amount">
+                                        <div class="effectp">$230</div></div>
+                                </div>
+                                  
+                                                                 <div class="ht-princing-excerpt">
+                                   In the basic plan, we perform 20 Keywords Optimization for our client.                                </div>
+                                  
+
+                                
+
+                            <div class="clearfix"></div>
+                        </div>
+                                                                                            <div class="ht-princing-link">
+                                    <a class="pribtn pricingbtn" href="#">BUY NOW                                    </a>
+                                </div>
+                                
+                       <!--  <div class="clearfix"></div> -->
+                    </div>
+                     <script>
+                          jQuery.noConflict();
+                          $(function(){
+                            function htplanblockHeight(){
+                              var ht = 0;
+                              $('#pricing-page .ht-plan-block').each(function(i){
+                                var tHt = $(this).height();
+                                if(ht<tHt){
+                                  ht=tHt;
+                                }
+                              });
+                              $('#pricing-page .ht-plan-block').height(ht+'px');
+                            }
+                            htplanblockHeight();
+                          });
+                          $( window ).resize(function(){
+                            htplanblockHeight();
+                          });
+                        </script>
+                </div>
+                {"id":209,"date":"2019-12-23T06:04:58","date_gmt":"2019-12-23T06:04:58","guid":{"rendered":"http:\/\/luzuk.com\/demo\/digital-marketing\/?page_id=209"},"modified":"2019-12-23T06:14:42","modified_gmt":"2019-12-23T06:14:42","slug":"pricing-shortcode-test","status":"publish","type":"page","link":"https:\/\/luzukdemo.com\/demo\/digital-marketing\/pricing-shortcode-test\/","title":{"rendered":"pricing shortcode test"},"content":{"rendered":"\n\n","protected":false},"excerpt":{"rendered":"","protected":false},"author":1,"featured_media":0,"parent":0,"menu_order":0,"comment_status":"closed","ping_status":"closed","template":"","meta":[],"_links":{"self":[{"href":"https:\/\/luzukdemo.com\/demo\/digital-marketing\/wp-json\/wp\/v2\/pages\/209"}],"collection":[{"href":"https:\/\/luzukdemo.com\/demo\/digital-marketing\/wp-json\/wp\/v2\/pages"}],"about":[{"href":"https:\/\/luzukdemo.com\/demo\/digital-marketing\/wp-json\/wp\/v2\/types\/page"}],"author":[{"embeddable":true,"href":"https:\/\/luzukdemo.com\/demo\/digital-marketing\/wp-json\/wp\/v2\/users\/1"}],"replies":[{"embeddable":true,"href":"https:\/\/luzukdemo.com\/demo\/digital-marketing\/wp-json\/wp\/v2\/comments?post=209"}],"version-history":[{"count":6,"href":"https:\/\/luzukdemo.com\/demo\/digital-marketing\/wp-json\/wp\/v2\/pages\/209\/revisions"}],"predecessor-version":[{"id":218,"href":"https:\/\/luzukdemo.com\/demo\/digital-marketing\/wp-json\/wp\/v2\/pages\/209\/revisions\/218"}],"wp:attachment":[{"href":"https:\/\/luzukdemo.com\/demo\/digital-marketing\/wp-json\/wp\/v2\/media?parent=209"}],"curies":[{"name":"wp","href":"https:\/\/api.w.org\/{rel}","templated":true}]}}
