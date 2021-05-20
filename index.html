@@ -594,40 +594,82 @@ WE CAN HELP YOU GROW </h2>
 }
 
                                                                 </style>
-                                       <div class="containknow">
-    <a class="knowmore" href="">Know More</a>
-</div>
+                
+
+<button class="btn btn-background-circle">Know More</button>
+
+
 
 <style>
-    .knowmore{
-        text-decoration: none;
-        font-size: 1.25em;
-        font-weight: 800;
-        color: black;
-       font-family: 'Montserrat';
-    }
 
-    .containknow{
-        margin: 10px;
-        padding: 1px;
-        border: 3px solid #5c86dd;
-        width: 150px;
-        height: 60px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
-    .containknow:hover{
-        background-color: #5c86dd;
-        transition: 1s;
-    }
-    .knowmore:hover{
-        color: white;
-        transition: 1s;
-    }
+button {
+  margin: 1rem;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+}
+
+.btn {
+   
+    border-radius: 100px;
+  background-color: var(--background-color);
+  color: #222;
+  padding: .5em 1em;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+
+  --background-color: #E3E3E3;
+  --border-size: 2px;
+  --accent-color: #5c86dd;
+}
+
+
+
+.btn.btn-background-circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  transition: transform 500ms ease-in-out;
+
+  transform: scale(1.5);
+}
+
+.btn.btn-background-circle:hover::before,
+.btn.btn-background-circle:focus::before {
+  transform: scale(0);
+}
+
+.btn.btn-background-circle {
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--accent-color);
+  transition: color 500ms ease-in-out;
+}
+
+.btn.btn-background-circle:hover,
+.btn.btn-background-circle:focus {
+  color: white;
+}
+
+
+
+
 </style>
+
+
+
 
 <!-- <div class="col-md-6 col-sm-12 aboutimgborder wow fadeInRight">
 <div style="background-color: #5c86dd;border-color:  #5c86dd;after:{ border-right-color:#5c86dd;}" class="aboutbox-img">
