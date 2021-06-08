@@ -12,6 +12,35 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/13730/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+
+
+
+
+
 	<link rel="stylesheet" href="../wp-content/themes/digital-marketing-pro/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../wp-content/themes/digital-marketing-pro/css/animate.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
@@ -621,21 +650,34 @@ main#innerpage-box div#content-box .inner-pageteam .social-media-team{background
 						<h4 style="font-family:'montserrat';" class="ht-section-title text-center">Contact Now</h4> 
 						<p><div role="form" class="wpcf7" id="wpcf7-f167-o1" lang="en-US" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="https://luzukdemo.com/demo/digital-marketing/contact/#wpcf7-f167-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="167" />
-<input type="hidden" name="_wpcf7_version" value="5.4.1" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f167-o1" />
-<input type="hidden" name="_wpcf7_container_post" value="0" />
-<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-</div>
-<p><span class="wpcf7-form-control-wrap fristname"><input type="text" style="font-family: 'montserrat';" name="fristname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" /></span><br />
-<span class="wpcf7-form-control-wrap fremail"><input type="email" style="font-family: 'montserrat';" name="fremail" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email Address" /></span><br />
-<span class="wpcf7-form-control-wrap frmsg"><textarea style="font-family: 'montserrat';" name="frmsg" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea></span><br />
-<input style="back;" type="submit" style="font-family: 'montserrat';" value="SUBMIT" class="wpcf7-form-control wpcf7-submit" /></p>
+
+
+<form id="myForm" >
+<input type="text" style="font-family: 'montserrat';" name="client_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" /><br />
+<input type="email" style="font-family: 'montserrat';" name="client_email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email Address" /><br />
+<textarea style="font-family: 'montserrat';" name="client_message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea><br />
+<!-- <input style="back;" type="submit" style="font-family: 'montserrat';" value="SUBMIT" class="wpcf7-form-control wpcf7-submit" /></p> -->
+</form>
+
+<button class="submit-btn" onclick="SubForm()">Submit</button>
 
 <style>
+	.submit-btn{
+		background-color: #ffff00;
+        color: #000;
+		width: 120px;
+		height: 40px;
+		border-radius: 10%;
+		transition: .5s;
+		
+	}
+	.submit-btn:hover{
+		border: 1px solid #ffff00;
+        color: white;
+	  background-color: black;
+	  transform: translateY(-3px);
+
+	}
 	#ht-contactus-wrap input[type="submit"] {
     color: #000000;
 	background-color: #ffff00	
