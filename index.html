@@ -11,6 +11,31 @@
 <link rel="pingback" href="xmlrpc.php">
 <script src="../../../use.fontawesome.com/18a9c36ed1.js"></script>
 
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/13721/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+
+
+
 <link rel="stylesheet" href="wp-content/themes/digital-marketing-pro/css/bootstrap.min.css">
 <link rel="stylesheet" href="wp-content/themes/digital-marketing-pro/css/animate.css" />
 <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
@@ -1253,32 +1278,43 @@ LETS TALK. BUT YOU FIRST. </div>
 <div class="ht-appintment-member-wrap">
 <div role="form" class="wpcf7" id="wpcf7-f21-o2" lang="en-US" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="https://luzukdemo.com/demo/digital-marketing/#wpcf7-f21-o2" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<!-- <form action="" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="21" />
 <input type="hidden" name="_wpcf7_version" value="5.4.1" />
 <input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f21-o2" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f21-o2" /> -->
 <!-- <input type="hidden" name="_wpcf7_container_post" value="0" />
 <input type="hidden" name="_wpcf7_posted_data_hash" value="" /> -->
 </div>
 <div class="">
 
-<div style="margin-right: 50px; margin-left: 30px;" class="col-md-3"><span class="wpcf7-form-control-wrap Fname"><input type="text" name="Fname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" /></span></div>
-<div style="margin-right: 50px; margin-left: 30px;" class="col-md-3"><span class="wpcf7-form-control-wrap femail"><input type="email" name="femail" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" /></span></div>
-<div style="margin-left: 30px;margin-right: 50px; "  class="col-md-3"><span class="wpcf7-form-control-wrap fnumber"><input type="number" name="fnumber" value="" class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number" aria-invalid="false" placeholder="Contact Number" /></span></div>
+<form id="myForm" >
+<div style="margin-right: 50px; margin-left: 30px;" class="col-md-3"><span class="wpcf7-form-control-wrap Fname"><input type="text" name="full_name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" /></span></div>
+<div style="margin-right: 50px; margin-left: 30px;" class="col-md-3"><span class="wpcf7-form-control-wrap femail"><input type="email" name="email_address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" /></span></div>
+<div style="margin-left: 30px;margin-right: 50px; "  class="col-md-3"><span class="wpcf7-form-control-wrap fnumber"><input type="number" name="contact_number" value="" class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number" aria-invalid="false" placeholder="Contact Number" /></span></div>
 <div class="clearfix"></div>
-
-
+</form>
+<button style="width: 150px;margin-right: 100px;" class="sumbit-btn" onclick="SubForm()">Submit </button>
 <p  style="margin-left:19px;margin-right:50px;">
    
     <style>
+     button.sumbit-btn:hover {
+      
+    border: 1px solid #ffff00;
+    color: black;
+}
+@media (max-width:700px) {
+  button.submit-btn{
+    margin-right: 0;
+  }
+}
+
         #ht-contact-section .ht-appintment-member-wrap input[type="submit"] {
     background-color: #ffff00;
 }
     </style>
    
-    <input style="border-radius: 17px;font-family: 'Montserrat', sans-serif;" type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit" /></p>
 <div class="wpcf7-response-output" aria-hidden="true"></div></form></div>
 <div class="clearfix"></div>
 </div>
